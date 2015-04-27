@@ -146,7 +146,6 @@ public WeightedAvrg(){
         panel1.add(project);
         panel1.add(finalp);
 
-
         panel2.add(subject);
         panel2.add(scorelabel);
         panel2.add(weightlabel);
@@ -157,23 +156,19 @@ public WeightedAvrg(){
         score1.add(textfield[3]);
         score1.add(textfield[4]);
 
-
         weightpanel.add(finalgrade);
         weightpanel.add(textfield1[1]);
         weightpanel.add(textfield1[2]);
         weightpanel.add(textfield1[3]);
         weightpanel.add(textfield1[4]);
 
-
         calculate.add(button);
         calculate.add(studentname1);
         calculate.add(finalscore);
         calculate.add(finalweight);
 
-
 }
-
-        
+      
         public void actionPerformed(ActionEvent arg0) {
 
                 String score1 = textfield[0].getText();
@@ -187,10 +182,10 @@ public WeightedAvrg(){
                 double weight4 = Double.parseDouble(textfield1[3].getText());
                 double weight5 = Double.parseDouble(textfield1[4].getText());
 
-                double total2= score2*(weight2/100);
-                double total3= score3*(weight3/100);
-                double total4= score4*(weight4/100);
-                double total5= score5*(weight5/100);
+                double total2= score2*(weight2);
+                double total3= score3*(weight3);
+                double total4= score4*(weight4);
+                double total5= score5*(weight5);
 
                 studentname1.setText(score1);
                 double averagescore= total2+total3+total4+total5;
